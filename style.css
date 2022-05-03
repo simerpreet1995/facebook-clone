@@ -27,6 +27,7 @@ body{
 
 
 .header{
+    width: 100vw;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -188,7 +189,7 @@ body{
 .storyreels{
     display: flex;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     justify-content: center;
     margin-left: 20px;
     margin-top: 20px;
@@ -237,9 +238,88 @@ body{
     transform: scale(1.05);
 }
 
+ /* ========================= third row mid part whats on your mind ? ============================ */
+
+
+.messageSender-avtar img{
+    border-radius: 50%;
+    width: 40px;
+    
+
+}
 
 
 
+.material-icons.videocam{
+    color: red;
+}
+
+.material-icons.photo{
+    color: green;
+    padding: 0;
+    margin: 0;
+}
+
+.material-icons.emo-icon{
+    color: orange;
+}
+
+.messageSender{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px  7px -7px rgba(0,0,0,0.75);
+    width: 100vw;
+}
+
+.messageSender-top{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eff2f5;
+    padding: 15px;
+    width: 100%;
+    /* border: 2px solid black; */
+    /* flex: 1; */
+}
+
+.messageSender-avtar{
+    display: flex;
+
+}
+
+.messageSender-top form{
+    display: flex;
+    /* border: 2px solid black; */
+    width: 100%;
+} 
+
+.messageSender-top form input{
+    width: 75vw;
+    outline-width: 0;
+    border: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-radius: 800px;
+    /* background-color: #eff2f5; */
+    background-color: #f1f2f5;
+}
+
+
+.messageSender-bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.messageSender-option{
+    padding: 8px;
+    display: flex;
+    color: gray;
+}
+
+
+ /* ============= XX third row mid part whats on your mind ? XX ========================= */
 
 
 /*======= XX Feeds/ middle part XX ========*/
@@ -264,7 +344,71 @@ body{
 
 
 
+.header-mobile{
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    /* display: none; */
+}
 
+.left-mobile{
+    display: flex;
+    /* width: 60%; */
+
+}
+
+.left-mobile-logo img{
+    width: 30px;
+    margin: 8px;
+}
+
+
+.right-mobile{
+    width: 80%;
+}
+
+.right-mobile-icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* border: 2px solid; */
+    margin: 5px;
+}
+
+.right-mobile-icons img{
+    width: 25px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin: 4px;
+    margin-right: 18px;
+}
+
+
+#mobile-navigation{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-mobile-icons{
+    background-color: white;
+    display: none;
+    box-shadow: 1px 5px 7px -9px;
+}
+
+.mobile-icons-wrapper{
+color: gray;
+cursor: pointer;
+}
+
+.mobile-icons-wrapper .homies{
+    color: #2e81f4;
+}
+
+.mobile-icons-wrapper:hover{
+    background-color: #f1f2f5;
+    padding: 0 15px;
+
+}
 
 /*========XX mobile version css XX=========*/
 
@@ -286,10 +430,31 @@ body{
         display: none;
     }
 
+    .header{
+        display: none;
+    }
+
     .sidebar{
         display: none;
     }
+
+    .storyreels{
+    
+        width: 75vw;
+        height: 25vh;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        overflow-x: auto;
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+    .header-mobile-icons{
+        display: block;
+    }
+    
 }
+
 
 
 
@@ -311,8 +476,23 @@ body{
     .header-info{
         display: none;
     }
+
+    
 }    
 
 
 /*================ XX Mdeia query for medium device XX =================*/
 
+
+/* mobile navigation show only from below 650px */
+/*========== media query for mobile navigation ===========*/
+@media screen and (min-width:650px) {
+
+    .header-mobile{
+        display: none;
+    }    
+}
+
+
+/* mobile navigation show only from below 650px */
+/*========== XX media query for mobile navigation =========== XX*/
